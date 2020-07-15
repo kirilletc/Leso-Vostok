@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Лесовосток</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/icons.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="left-sidebar">
+        <div class="left-sidebar_logo">
+            <div class="logo-left"></div>
+        </div>
+        <div class="left-sidebar_item">
+            <div class="home-left"></div> Главная
+        </div>
+        <div class="left-sidebar_item">
+            <div class="market-left"></div> Маркетплейс
+        </div>
+        <div class="left-sidebar_item">
+            <div class="torgs-left"></div> Торги
+        </div>
+        <div class="left-sidebar_item">
+            <div class="part"></div>Мои участки
+        </div>
+        <div class="left-sidebar_item">
+            <div class="claims"></div>Мои заявления
+        </div>
+        <div class="left-sidebar_item">
+            <div class="production"></div>Продукция
+        </div>
+        <div class="left-sidebar_item left-sidebar_item-active">
+            <div class="claims-sell"></div> Заявки на<br> продажу
+        </div>
+        <div class="left-sidebar_copyright">
+            <div class="left-sidebar_copyright-top">Фонд развития<br> Дальнего Востока</div>
+            <div class="left-sidebar_copyright-bottom">&copy; 2020</div>
+        </div>
+    </div>
+    <div id="map">
+        <!-- верхний левый контрол карта-список -->
+        <div class="map-table">
+            <div class="map-table-left map-table-left-active">Карта</div>
+            <div class="map-table-right ">Список</div>
+        </div>
+        <!-- верхний правый контрол пользователя карты -->
+        <div class="map-top-right-wrapper">
+            <div class="map-top-right-wrapper__zoom">
+                <div class="map-top-right-wrapper__zoom-left">
+                    <div class="plus"></div>
+                </div>
+                <div class="map-top-right-wrapper__zoom-middle">5</div>
+                <div class="map-top-right-wrapper__zoom-right">
+                    <div class="minus"></div>
+                </div>
+            </div>
+            <div class="map-top-right-wrapper__layer">
+                <div class="layer layer-active"></div>
+                <!-- попап от иконки слоя -->
+                <div class="layer-popup">
+                    <div class="layer-popup__header">
+                        <div class="layer-m"></div>
+                        Слои
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="parts-m1"></div>
+                        Лесные участки
+                        <div class="toggle toggle-active"></div>
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="kvartal-m2"></div>
+                        Квартальная сеть
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="declaration-m3"></div>
+                        Лесные декларации
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="security-m4"></div>
+                        Охряняемые территории
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="fire-m5"></div>
+                        Пожары
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="pulse-m6"></div>
+                        Мониторинг
+                        <div class="toggle"></div>
+                    </div>
+                    <div class="layer-popup__row">
+                        <div class="lands-m7"></div>
+                        План насаждений
+                        <div class="toggle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-top-right-wrapper__user">
+                <div class="person-menu"></div>Войти
+            </div>
+        </div>
+        <!-- папап  нижний участок -->
+        <div class="map-popup-part1">
+            <div class="map-popup-part1__header">Участок №967045</div>
+            <div class="map-popup-part1__wrapper-in style-4">
+                <div class="map-popup-part1__wrapper-in__header">Допустимые объемы изъятия (в год)</div>
+                <div class="map-popup-part1__wrapper-in__table">
+                    <div class="map-popup-part1__wrapper-in__table_row">
+                        <div class="map-popup-part1__wrapper-in__table_row-el">Порода</div>
+                        <div class="map-popup-part1__wrapper-in__table_row-el">Сосна</div>
+                    </div>
+                    <div class="map-popup-part1__wrapper-in__table_row">
+                        <div class="map-popup-part1__wrapper-in__table_row-el">Строка</div>
+                        <div class="map-popup-part1__wrapper-in__table_row-el">3 463</div>
+                    </div>
+                </div>
+                <div class="map-popup-part1__wrapper-in__header">Начальная ставка арендной платы</div>
+                <div class="map-popup-part1__wrapper-in__table">
+                    <div class="map-popup-part1__wrapper-in__table_row">
+                        <div class="map-popup-part1__wrapper-in__table_row-el">Квартал №1</div>
+                        <div class="map-popup-part1__wrapper-in__table_row-el">186 000 руб.</div>
+                    </div>
+                    <div class="map-popup-part1__wrapper-in__table_row">
+                        <div class="map-popup-part1__wrapper-in__table_row-el">Квартал №2</div>
+                        <div class="map-popup-part1__wrapper-in__table_row-el">364 000 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- копирайт внизу карты -->
+        <div class="map-copyright">
+            <div class="map-copyright__img"></div>
+        </div>
+    </div>
+</body>
+
+</html>

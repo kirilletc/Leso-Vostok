@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: #FFF;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.23s ease;
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+#map {
+    width: calc(100vw - 168px);
+    height: calc(100vh);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 168px;
+    right: 0;
+    background: #FFF;
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.spacer-23 {
+    display: block;
+    width: 100%;
+    height: 23px;
+}
+
+.spacer-15 {
+    display: block;
+    width: 100%;
+    height: 15px;
+}
+
+.left-sidebar {
+    position: fixed;
+    width: 168px;
+    background: #008060;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    height: calc(100vh);
+    transition: all 0.23s ease-in-out;
+    overflow-y: auto;
+}
+
+.left-sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.left-sidebar_logo {
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 62, 47, 0.5);
+    cursor: pointer;
+}
+
+.left-sidebar_item {
+    width: 100%;
+    height: 73px;
+    min-height: 73px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 62, 47, 0.5);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 0 15px;
+    background: #008060;
+}
+
+.left-sidebar_item-active {
+    background: #003E2F;
+}
+
+.left-sidebar_copyright {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #008060;
+    z-index: -1;
+    padding: 0 15px;
+}
+
+.left-sidebar_copyright-top {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.left-sidebar_copyright-bottom {
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    color: #FFF;
+    font-weight: 300;
+}
+
+/*верхний левый контрол карта-список*/
+.map-table {
+    width: 174px;
+    height: 40px;
+    /*border: 1px solid #E0E0E0;*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 12px;
+    background: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.map-table-left {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #453D3D;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+.map-table-right {
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #453D3D;
+    border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+.map-table-left-active {
+    background: #008060;
+    color: #FFF;
+}
+
+/*верхний правый контрол пользователя карты*/
+.map-top-right-wrapper {
+    min-width: 300px;
+    width: auto;
+    height: 40px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.map-top-right-wrapper__zoom {
+    width: 116px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 7px 0;
+    margin-right: 15px;
+}
+
+.map-top-right-wrapper__zoom-left {
+    width: 33.3%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.map-top-right-wrapper__zoom-middle {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #453D3D;
+    border-left: 1px solid #E3E8F1;
+    border-right: 1px solid #E3E8F1;
+}
+
+.map-top-right-wrapper__zoom-right {
+    width: 33.3%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.map-top-right-wrapper__layer {
+    width: 56px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    background: #FFF;
+    position: relative;
+}
+
+.map-top-right-wrapper__user {
+    min-width: 92px;
+    width: auto;
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+    /*border: 1px solid red;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*копирайт внизу карты*/
+.map-copyright {
+    position: absolute;
+    bottom: 0;
+    height: 13px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.map-copyright__img {
+    width: 335px;
+    height: 13px;
+    background: url(../assets/copyright.png);
+    margin-right: 20px;
+}
+
+/*попап от иконки слоя*/
+.layer-popup {
+    position: absolute;
+    width: 291px;
+    height: 357px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    display: flex;
+    top: 50px;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    /*opacity: 0;*/
+}
+
+.layer-popup__header {
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #453D3D;
+    margin-bottom: 3px;
+}
+
+.layer-popup__row {
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #453D3D;
+}
+
+.layer-popup__row:last-child {
+    border-bottom: none;
+}
+
+/*папап  нижний участок*/
+.map-popup-part1 {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 416px;
+    left: 0;
+    right: 0;
+    bottom: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.map-popup-part1__header {
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+
+/*BEGIN SCROLLBAR STYLES*/
+.style-4::-webkit-scrollbar-track {
+    background-color: #FFF;
+}
+
+.style-4::-webkit-scrollbar {
+    width: 8px;
+    background-color: #6B707B;
+}
+
+.style-4::-webkit-scrollbar-thumb {
+    background-color: #6B707B;
+    border: 2px solid #6B707B;
+    border-radius: 3px;
+}
+
+.style-4 {
+    scrollbar-color: #6B707B #FFF;
+    scrollbar-width: thin;
+}
+
+/*END SCROLLBAR STYLES*/
+
+.map-popup-part1__wrapper-in {
+    width: 100%;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*border: 1px solid red;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 37px;
+}
+
+.map-popup-part1__wrapper-in__header {
+    width: 100%;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6B707B;
+    margin-bottom: 15px;
+}
+
+.map-popup-part1__wrapper-in__table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 83px;
+    border: 1px solid #E6E6E6;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.map-popup-part1__wrapper-in__table_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.map-popup-part1__wrapper-in__table_row:last-child {
+    border-bottom: none;
+}
+
+.map-popup-part1__wrapper-in__table_row-el {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #E6E6E6;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6B707B;
+    padding: 0 15px;
+}
+
+.map-popup-part1__wrapper-in__table_row-el:last-child {
+    border-right: none;
+    font-weight: normal;
+}
