@@ -214,7 +214,7 @@ button::-moz-focus-inner {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 500;
+	z-index: 500;
 }
 
 .map-table-left {
@@ -766,7 +766,6 @@ button::-moz-focus-inner {
     min-height: 340px;
     /*border: 1px solid orange;*/
 }
-
 .map-popup-part2__wrapper-in-inside__left::-webkit-scrollbar {
     display: none;
 }
@@ -926,7 +925,6 @@ button::-moz-focus-inner {
     border-right: none;
     font-weight: normal;
 }
-
 .hidden  {
     display: none;
 }
