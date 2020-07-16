@@ -214,7 +214,7 @@ button::-moz-focus-inner {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 100;
+    z-index: 500;
 }
 
 .map-table-left {
@@ -291,7 +291,7 @@ button::-moz-focus-inner {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 100;
+    z-index: 500;
 }
 
 .map-top-right-wrapper__zoom {
@@ -925,4 +925,8 @@ button::-moz-focus-inner {
 .map-popup-part2__wrapper-in__table2_row-el:last-child {
     border-right: none;
     font-weight: normal;
+}
+
+.hidden  {
+    display: none;
 }
