@@ -144,7 +144,7 @@ button::-moz-focus-inner {
     background: #008060;
 }
 
-.left-sidebar_item-active {
+.left-sidebar_item.active {
     background: #003E2F;
 }
 
@@ -519,6 +519,7 @@ button::-moz-focus-inner {
     background: #FFFFFF;
     border-radius: 6px;
     padding: 15px;
+	z-index: 500;
 }
 
 .map-popup-part1__header {
