@@ -1,15 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -210,7 +198,7 @@ button::-moz-focus-inner {
 .map-table {
     width: 174px;
     height: 40px;
-    /*border: 1px solid #E0E0E0;*/
+    border: 1px solid #E0E0E0;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -325,6 +313,7 @@ button::-moz-focus-inner {
     background: #FFF;
     padding: 7px 0;
     margin-right: 15px;
+    border: 1px solid #E0E0E0;
 }
 
 .map-top-right-wrapper__zoom-left {
@@ -400,6 +389,7 @@ button::-moz-focus-inner {
     border-radius: 12px;
     background: #FFF;
     position: relative;
+    border: 1px solid #E0E0E0;
 }
 
 .map-top-right-wrapper__user {
@@ -717,7 +707,7 @@ button::-moz-focus-inner {
 }
 
 .map-popup-part2_full {
-    height: 800px;
+    height: 721px;
 }
 
 .map-popup-part2__header {
@@ -772,42 +762,43 @@ button::-moz-focus-inner {
 .map-popup-part2__wrapper-in-inside {
     width: 100%;
     height: 100%;
-    /*border: 1px solid red;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .map-popup-part2__wrapper-in-inside__right {
     width: 30%;
     overflow-x: auto;
-    height: 100%;
+    height: auto;
     min-width: 240px;
     min-height: 340px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    /*border: 1px solid orange;*/
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 290px;
+    top: 60px;
+    position: relative;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .map-popup-part2__wrapper-in-inside__left::-webkit-scrollbar {
@@ -963,12 +954,11 @@ button::-moz-focus-inner {
 .map-popup-part2__wrapper-in-inside__right-wrapper-in {
     width: 239px;
     height: 345px;
-    /*border: 1px solid red;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 23px;
-    margin-top: 127px;
+    margin-top: 23px;
 }
 
 /*chart styles below*/
@@ -1032,12 +1022,6 @@ span.apexcharts-legend-text {
     font-size: 16px;
     line-height: 22px;
     color: #453D3D;
-    margin-bottom: 23px;
-    width: 239px;
-    margin-left: 110px;
-    position: absolute;
-    top: 100px;
-    right: 80px;
 }
 
 .map-popup-part2__header_right {
@@ -1201,6 +1185,33 @@ button.disabled {
     color: #000;
 }
 
-.popup-full-height {
-    height: 677px;
+.wrapper-full-height {
+    height: 600px;
+}
+
+.docs_declaration {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #067A57;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.top--5 {
+    top: -5px;
 }
