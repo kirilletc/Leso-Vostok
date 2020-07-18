@@ -4,6 +4,12 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -47,6 +53,14 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block;
+}
+
 #map {
     width: calc(100vw - 168px);
     height: calc(100vh);
@@ -64,6 +78,7 @@ button::-moz-focus-inner {
     display: block;
     width: 100%;
     height: 23px;
+    min-height: 23px;
 }
 
 .spacer-15 {
@@ -214,7 +229,7 @@ button::-moz-focus-inner {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-	z-index: 500;
+    z-index: 500;
 }
 
 .map-table-left {
@@ -519,11 +534,12 @@ button::-moz-focus-inner {
     background: #FFFFFF;
     border-radius: 6px;
     padding: 15px;
+    padding-right: 40px;
 }
 
 .map-popup-part1__header {
     width: 100%;
-    height: 40px;
+    height: 52px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -540,6 +556,10 @@ button::-moz-focus-inner {
     font-size: 24px;
     line-height: 40px;
     color: #000000;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /*BEGIN SCROLLBAR STYLES*/
@@ -566,7 +586,7 @@ button::-moz-focus-inner {
 /*END SCROLLBAR STYLES*/
 .map-popup-part1__wrapper-in {
     width: 100%;
-    height: 345px;
+    height: 295px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,7 +603,6 @@ button::-moz-focus-inner {
     /*border: 1px solid red;*/
     overflow-x: hidden;
     overflow-y: auto;
-    padding-top: 37px;
 }
 
 .map-popup-part1__wrapper-in__header {
@@ -620,7 +639,7 @@ button::-moz-focus-inner {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
+    width: 99%;
     height: 83px;
     border: 1px solid #E6E6E6;
     -webkit-box-orient: vertical;
@@ -667,7 +686,6 @@ button::-moz-focus-inner {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 50%;
     height: 100%;
     border-right: 1px solid #E6E6E6;
     font-style: normal;
@@ -680,7 +698,6 @@ button::-moz-focus-inner {
 
 .map-popup-part1__wrapper-in__table_row-el:last-child {
     border-right: none;
-    font-weight: normal;
 }
 
 /*папап  нижний участок 1*/
@@ -696,17 +713,22 @@ button::-moz-focus-inner {
     background: #FFFFFF;
     border-radius: 6px;
     padding: 15px;
+    padding-right: 40px;
+}
+
+.map-popup-part2_full {
+    height: 800px;
 }
 
 .map-popup-part2__header {
     width: 100%;
-    height: 40px;
+    height: 52px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -717,11 +739,15 @@ button::-moz-focus-inner {
     font-size: 24px;
     line-height: 40px;
     color: #000000;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .map-popup-part2__wrapper-in {
     width: 100%;
-    height: 345px;
+    height: 295px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -737,6 +763,10 @@ button::-moz-focus-inner {
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.style-3 {
+    overflow: hidden;
 }
 
 .map-popup-part2__wrapper-in-inside {
@@ -764,8 +794,22 @@ button::-moz-focus-inner {
     height: 100%;
     min-width: 240px;
     min-height: 340px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     /*border: 1px solid orange;*/
 }
+
 .map-popup-part2__wrapper-in-inside__left::-webkit-scrollbar {
     display: none;
 }
@@ -779,8 +823,6 @@ button::-moz-focus-inner {
     min-width: 785px;
     overflow-x: auto;
     height: 100%;
-    min-height: 340px;
-    /*border: 1px solid green;*/
 }
 
 .map-popup-part2__wrapper-in-inside__left__header {
@@ -795,8 +837,7 @@ button::-moz-focus-inner {
     align-items: center;
     width: 100%;
     height: 20px;
-    margin-bottom: 37px;
-    margin-top: 37px;
+    margin-bottom: 7px;
 }
 
 .map-popup-part2__wrapper-in-inside__left__header-text {
@@ -819,8 +860,8 @@ button::-moz-focus-inner {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
-    height: 160px;
+    width: 99%;
+    height: auto;
     /*border: 1px solid #E6E6E6;*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -881,19 +922,191 @@ button::-moz-focus-inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 99%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.map-popup-part2__wrapper-in__table2_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
     height: 42px;
     border: 1px solid #E6E6E6;
+    border-bottom: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.map-popup-part2__wrapper-in__table2_row:last-child {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.map-popup-part2__wrapper-in-inside__right-wrapper-in {
+    width: 239px;
+    height: 345px;
+    /*border: 1px solid red;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 23px;
+    margin-top: 127px;
+}
+
+/*chart styles below*/
+#chart {
+    max-width: 239px;
+    margin: 0;
+    padding: 0;
+    min-height: 260px !important;
+}
+
+.actions {
+    top: -10px;
+    position: relative;
+    z-index: 10;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.apexcharts-canvas {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    right: 50px;
+    overflow: visible;
+    min-height: 260px !important;
+}
+
+.apexcharts-legend.apexcharts-align-center.position-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    bottom: -9px !important;
+    left: 87px !important;
+    overflow: visible;
+}
+
+.apexcharts-legend-series {
+    min-height: 18px;
+}
+
+span.apexcharts-legend-marker {
+    margin-right: 10px;
+}
+
+span.apexcharts-legend-text {
+    font-size: 15px !important;
+}
+
+.map-popup-part2__wrapper-in-inside__right-wrapper-in_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #453D3D;
+    margin-bottom: 23px;
+    width: 239px;
+    margin-left: 110px;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
+
+.map-popup-part2__header_right {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 521px;
+    height: 48px;
+}
+
+button.map-popup-part2__header_right_button_1 {
+    width: 253px;
+    height: 48px;
+    border: 1px solid #067A57;
+    border-radius: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #067A57;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+}
+
+button.map-popup-part2__header_right_button_2 {
+    width: 253px;
+    height: 48px;
+    border: 1px solid #067A57;
+    border-radius: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    background: #067A57;
+    outline: none;
+}
+
+button.disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 .map-popup-part2__wrapper-in__table2_row-el {
@@ -910,7 +1123,6 @@ button::-moz-focus-inner {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 50%;
     height: 100%;
     border-right: 1px solid #E6E6E6;
     font-style: normal;
@@ -923,8 +1135,72 @@ button::-moz-focus-inner {
 
 .map-popup-part2__wrapper-in__table2_row-el:last-child {
     border-right: none;
+}
+
+.el10 {
+    width: 10%;
+}
+
+.el20 {
+    width: 20%;
+}
+
+.el25 {
+    width: 25%;
+}
+
+.el30 {
+    width: 30%;
+}
+
+.el33 {
+    width: 33.33%;
+}
+
+.el40 {
+    width: 40%;
+}
+
+.el50 {
+    width: 50%;
+}
+
+.el60 {
+    width: 60%;
+}
+
+.el70 {
+    width: 70%;
+}
+
+.el80 {
+    width: 80%;
+}
+
+.el90 {
+    width: 90%;
+}
+
+.el100 {
+    width: 100%;
+}
+
+.table-header {
+    background: #F3F3F3;
+}
+
+.f-w-normal {
     font-weight: normal;
 }
-.hidden  {
-    display: none;
+
+.f-w-bold {
+    font-weight: bold;
+}
+
+.black {
+    color: #000;
+}
+
+.popup-full-height {
+    height: 677px;
 }
