@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Лесовосток - Личный Кабинет</title>
+    <title>Личный Кабинет - Лесовосток</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/icons.css" rel="stylesheet" />
@@ -50,9 +50,23 @@
         </div>
         <div class="map-middle-wrapper-profile style-4">
             <div class="map-middle-wrapper-profile-header">Мои заявки на продажу</div>
-            <div class="map-middle-wrapper-profile-row"></div>
-            <div class="map-middle-wrapper-profile-h2">Дата подачи заяления</div>
-            <div class="map-middle-wrapper-profile-row"></div>
+            <div class="map-middle-wrapper-profile-row">
+                <input type="text" name="input" placeholder="Поиск по  коду инструмента" class="header-input">
+                <div class="map-middle-wrapper-profile-row_price-wrapper">
+                    Цена
+                    <div class="input--half-wrapper">
+                        <input type="number" name="input1" placeholder="от" class="map-middle-wrapper-profile-row_price-wrapper-input-half"><input type="number" name="input2" placeholder="до" class="map-middle-wrapper-profile-row_price-wrapper-input-half">
+                    </div>
+                </div>
+            </div>
+            <div class="map-middle-wrapper-profile-h2">Дата подачи заявления</div>
+            <div class="map-middle-wrapper-profile-row">
+                <div class="map-middle-wrapper-profile-date-wrapper">
+                    <input type="date" name="input-date-1" class="input-date">
+                    <input type="date" name="input-date-1" class="input-date">
+                </div>
+                <button class="map-popup-part2__header_right_button_2">Создать</button>
+            </div>
             <div class="spacer-17"></div>
             <div class="map-wrapper-profile__table">
                 <div class="map-wrapper-profile__table_row">
@@ -87,7 +101,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">4</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -95,7 +109,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">5</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -103,7 +117,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">6</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -111,7 +125,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">7</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -119,7 +133,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">8</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -127,7 +141,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">9</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -135,7 +149,7 @@
                     <div class="map-wrapper-profile__table_row_el el20">13000 руб.</div>
                     <div class="map-wrapper-profile__table_row_el el20">11 ед.</div>
                 </div>
-                 <div class="map-wrapper-profile__table_row">
+                <div class="map-wrapper-profile__table_row">
                     <div class="map-wrapper-profile__table_row_el el10">10</div>
                     <div class="map-wrapper-profile__table_row_el el20">L004YGH025EU0</div>
                     <div class="map-wrapper-profile__table_row_el el10">1344</div>
@@ -145,10 +159,18 @@
                 </div>
             </div>
         </div>
-        <div class="map-bottom-wrapper-profile"></div>
+        <div class="map-bottom-wrapper-profile">
+            <div class="map-bottom-wrapper-profile-left">
+                <button class="map-bottom-wrapper-profile-1">Предыдущая</button>
+                <button class="map-bottom-wrapper-profile-s-green">1</button>
+                <button class="map-bottom-wrapper-profile-s-green">2</button>
+                <button class="map-bottom-wrapper-profile-s-gray">...</button>
+                <button class="map-bottom-wrapper-profile-s-green">34</button>
+                <button class="map-bottom-wrapper-profile-1">Следующая</button>
+            </div>
+            Показано заявок: 3 из 20
+        </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="js/main.js"></script>
 
 </html>
