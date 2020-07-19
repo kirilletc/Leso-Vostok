@@ -45,6 +45,10 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+tbody {
+    width: 100%;
+}
+
 .hidden {
     display: none !important;
 }
@@ -541,6 +545,11 @@ button::-moz-focus-inner {
     border-radius: 6px;
     padding: 15px;
     padding-right: 40px;
+    z-index: 500;
+}
+
+.left-sidebar_item.active {
+    background: #003E2F;
 }
 
 .map-popup-part1__header {
