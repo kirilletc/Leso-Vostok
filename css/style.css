@@ -914,35 +914,13 @@ tbody {
     border-bottom: none;
 }
 
-.map-popup-part2__wrapper-in__table1_row-el {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    height: 100%;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: #6B707B;
-}
-
-.map-popup-part2__wrapper-in__table1_row-el:last-child {
+.map-popup-part2__wrapper-in__table1_row span {
     font-weight: normal;
     justify-content: flex-end;
     color: #000;
 }
 
-.map-popup-part2__wrapper-in__table1_row-el span {
+.map-popup-part2__wrapper-in__table1_row span span {
     margin-left: 23px;
 }
 
