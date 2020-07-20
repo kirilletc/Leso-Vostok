@@ -2327,6 +2327,7 @@ button.btn3.active {
     border: 1px solid lightgray;
     font-size: 14px;
     border-right: none;
+    min-width: 535px;
 }
 
 .types table thead tr th:first-child {
@@ -2336,4 +2337,8 @@ button.btn3.active {
 .scanex-forestry-plot .types .type .value {
     text-align: center;
     white-space: nowrap;
+}
+
+.quadrants+div {
+    min-width: 1350px;
 }
