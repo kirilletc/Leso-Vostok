@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -558,9 +564,6 @@ tbody {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -575,6 +578,9 @@ tbody {
     margin-bottom: 17px;
     overflow: hidden;
     white-space: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 /*BEGIN SCROLLBAR STYLES*/
@@ -916,6 +922,8 @@ tbody {
 
 .map-popup-part2__wrapper-in__table1_row span {
     font-weight: normal;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     color: #000;
 }
@@ -2193,4 +2201,112 @@ button.map-bottom-wrapper-profile-s-gray {
     text-align: right;
     color: #000000;
     opacity: 0.65;
+}
+
+/*NEW CSS FOR FIRST TABLE BELOW*/
+
+.scanex-forestry-plot .quadrants {
+    float: left;
+    border: 1px solid gainsboro;
+    font-family: Montserrat;
+    width: 50%;
+    margin-right: 34px;
+}
+
+.scanex-forestry-plot .types {
+    max-height: 227px;
+    max-width: 535px;
+    width: 40%;
+    height: 100%;
+    border: none;
+    margin-top: 19px;
+    margin-left: 37px;
+    float: left;
+    font-family: Montserrat;
+}
+
+.quadrants table {
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.menu {
+    min-height: 39px;
+}
+
+.scanex-forestry-plot th:first-child {
+    border-right: none;
+}
+
+.menu button.btn0 {
+    width: auto;
+    height: 50px;
+    border-radius: 24px;
+    font-family: Montserrat;
+    border: 1px solid lightgray;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    padding: 0 32px;
+    margin-right: 11px;
+}
+
+.menu button.btn1 {
+    width: auto;
+    height: 50px;
+    border-radius: 24px;
+    font-family: Montserrat;
+    border: 1px solid lightgray;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    padding: 0 32px;
+    margin-right: 11px;
+}
+
+button.btn2 {
+    width: auto;
+    height: 50px;
+    border-radius: 24px;
+    font-family: Montserrat;
+    border: 1px solid lightgray;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    padding: 0 32px;
+    margin-right: 11px;
+}
+
+button.btn3 {
+    width: auto;
+    height: 50px;
+    border-radius: 24px;
+    font-family: Montserrat;
+    border: 1px solid lightgray;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    padding: 0 32px;
+    margin-right: 11px;
+}
+
+button.btn0.active {
+    background: rgba(0,62,47,0.5);
+    color: #FFF;
+}
+
+button.btn1.active {
+    background: rgba(0,62,47,0.5);
+    color: #FFF;
+}
+
+button.btn2.active {
+    background: rgba(0,62,47,0.5);
+    color: #FFF;
+}
+
+button.btn3.active {
+    background: rgba(0,62,47,0.5);
+    color: #FFF;
 }
