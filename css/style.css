@@ -2342,3 +2342,10 @@ button.btn3.active {
 .quadrants+div {
     min-width: 1350px;
 }
+
+.map-popup-part1 {
+    z-index: 500;
+}
+.left-sidebar_item.active {
+    background: #003E2F;
+}
