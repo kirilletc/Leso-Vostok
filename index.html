@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>Лесовосток</title>
@@ -9,7 +8,6 @@
     <link href="css/icons.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
-
 <body>
     <div class="left-sidebar">
         <div class="left-sidebar_logo">
@@ -700,6 +698,103 @@
                 </div>
             </div>
         </div>
+        <!-- попап матричных слоев -->
+        <div class="map-popup-layer-matrix">
+            <div class="map-popup-layer-matrix-header">
+                <div class="matrix-header"></div>
+                Матрица слоёв
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon red-full"></div>
+                Red Full
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon red-middle"></div>
+                Red Middle
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon red-empty"></div>
+                Red Empty
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon orange-full"></div>
+                Orange Full
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon orange-middle"></div>
+                Orange Middle
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon orange-empty"></div>
+                Orange Empty
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon yellow-full"></div>
+                Yellow Full
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon yellow-middle"></div>
+                Yellow Middle
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon yellow-empty"></div>
+                Yellow Empty
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon green-full"></div>
+                Green Full
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon green-middle"></div>
+                Green Middle
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon green-empty"></div>
+                Green Empty
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon blue-full"></div>
+                Blue Full
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon blue-middle"></div>
+                Blue Middle
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon blue-empty"></div>
+                Blue Empty
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon gray-full"></div>
+                Gray Full
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon gray-middle"></div>
+                Gray Middle
+                <div class="toggle toggle-active"></div>
+            </div>
+            <div class="map-popup-layer-matrix-row">
+                <div class="matrix-icon gray-empty"></div>
+                Gray Empty
+                <div class="toggle toggle-active"></div>
+            </div>
+        </div>
         <!-- копирайт внизу карты -->
         <div class="map-copyright">
             <div class="map-copyright__img"></div>
@@ -717,5 +812,4 @@ chart3.render();
 var chart4 = new ApexCharts(document.querySelector("#chart4"), options1);
 chart4.render();
 </script>
-
 </html>

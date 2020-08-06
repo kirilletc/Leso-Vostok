@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -2208,7 +2202,6 @@ button.map-bottom-wrapper-profile-s-gray {
 }
 
 /*NEW CSS FOR FIRST TABLE BELOW*/
-
 .scanex-forestry-plot .quadrants {
     float: left;
     border: 1px solid gainsboro;
@@ -2239,6 +2232,8 @@ button.map-bottom-wrapper-profile-s-gray {
 
 .menu {
     min-height: 39px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 }
 
@@ -2299,22 +2294,22 @@ button.btn3 {
 }
 
 button.btn0.active {
-    background: rgba(0,62,47,0.5);
+    background: rgba(0, 62, 47, 0.5);
     color: #FFF;
 }
 
 button.btn1.active {
-    background: rgba(0,62,47,0.5);
+    background: rgba(0, 62, 47, 0.5);
     color: #FFF;
 }
 
 button.btn2.active {
-    background: rgba(0,62,47,0.5);
+    background: rgba(0, 62, 47, 0.5);
     color: #FFF;
 }
 
 button.btn3.active {
-    background: rgba(0,62,47,0.5);
+    background: rgba(0, 62, 47, 0.5);
     color: #FFF;
 }
 
@@ -2346,6 +2341,83 @@ button.btn3.active {
 .map-popup-part1 {
     z-index: 500;
 }
+
 .left-sidebar_item.active {
     background: #003E2F;
+}
+
+/*layer matrix popup below*/
+.map-popup-layer-matrix {
+    position: absolute;
+    width: 291px;
+    height: auto;
+    min-height: 233px;
+    background: #343434;
+    border: 1px solid #2C2C2C;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 12px;
+    right: 5px;
+    bottom: 20px;
+    padding: 20px 15px 13px 15px;
+    max-height: 517px;
+    overflow-y: auto;
+}
+
+.map-popup-layer-matrix::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+.map-popup-layer-matrix-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 24px;
+    min-height: 24px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.map-popup-layer-matrix-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 24px;
+    min-height: 24px;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
 }

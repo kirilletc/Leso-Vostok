@@ -241,3 +241,118 @@
     height: 16px;
     min-width: 16px;
 }
+
+/*matrix layer icons below*/
+.matrix-header {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M16 3H8V5H16V3Z' fill='white'/%3E%3Cpath d='M5 1H1C0.734784 1 0.48043 1.10536 0.292893 1.29289C0.105357 1.48043 0 1.73478 0 2L0 6C0 6.26522 0.105357 6.51957 0.292893 6.70711C0.48043 6.89464 0.734784 7 1 7H5C5.26522 7 5.51957 6.89464 5.70711 6.70711C5.89464 6.51957 6 6.26522 6 6V2C6 1.73478 5.89464 1.48043 5.70711 1.29289C5.51957 1.10536 5.26522 1 5 1ZM4 5H2V3H4V5Z' fill='white'/%3E%3Cpath d='M16 11H8V13H16V11Z' fill='white'/%3E%3Cpath d='M5.70708 9.29308C5.51955 9.10561 5.26525 9.0003 5.00008 9.0003C4.73492 9.0003 4.48061 9.10561 4.29308 9.29308L3.00008 10.5861L1.70708 9.29308C1.61483 9.19757 1.50449 9.12139 1.38249 9.06898C1.26048 9.01657 1.12926 8.98898 0.996482 8.98783C0.863703 8.98668 0.732023 9.01198 0.609127 9.06226C0.486231 9.11254 0.374579 9.18679 0.280686 9.28069C0.186794 9.37458 0.11254 9.48623 0.0622595 9.60913C0.0119786 9.73202 -0.0133231 9.8637 -0.0121693 9.99648C-0.0110155 10.1293 0.0165708 10.2605 0.0689798 10.3825C0.121389 10.5045 0.197571 10.6148 0.293081 10.7071L1.58608 12.0001L0.293081 13.2931C0.197571 13.3853 0.121389 13.4957 0.0689798 13.6177C0.0165708 13.7397 -0.0110155 13.8709 -0.0121693 14.0037C-0.0133231 14.1365 0.0119786 14.2681 0.0622595 14.391C0.11254 14.5139 0.186794 14.6256 0.280686 14.7195C0.374579 14.8134 0.486231 14.8876 0.609127 14.9379C0.732023 14.9882 0.863703 15.0135 0.996482 15.0123C1.12926 15.0112 1.26048 14.9836 1.38249 14.9312C1.50449 14.8788 1.61483 14.8026 1.70708 14.7071L3.00008 13.4141L4.29308 14.7071C4.38533 14.8026 4.49567 14.8788 4.61768 14.9312C4.73968 14.9836 4.8709 15.0112 5.00368 15.0123C5.13646 15.0135 5.26814 14.9882 5.39104 14.9379C5.51393 14.8876 5.62558 14.8134 5.71948 14.7195C5.81337 14.6256 5.88762 14.5139 5.9379 14.391C5.98818 14.2681 6.01349 14.1365 6.01233 14.0037C6.01118 13.8709 5.98359 13.7397 5.93118 13.6177C5.87877 13.4957 5.80259 13.3853 5.70708 13.2931L4.41408 12.0001L5.70708 10.7071C5.89455 10.5196 5.99987 10.2652 5.99987 10.0001C5.99987 9.73492 5.89455 9.48061 5.70708 9.29308Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin-right: 10px;
+}
+
+.matrix-icon {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 10px;
+}
+
+/*red*/
+.red-full {
+    background: rgba(250, 68, 10, 0.5);
+    border: 1px solid #CD3232;
+}
+
+.red-middle {
+    background: rgba(205, 50, 50, 0.35);
+    border: 1px solid #CD3232;
+}
+
+.red-empty {
+    background: transparent;
+    border: 1px solid #CD3232;
+}
+
+/*orange*/
+.orange-full {
+    background: rgba(244, 151, 41, 0.5);
+    border: 1px solid #F49729;
+}
+
+.orange-middle {
+    background: rgba(244, 151, 41, 0.2);
+    border: 1px solid #F49729;
+}
+
+.orange-empty {
+    background: transparent;
+    border: 1px solid #F49729;
+}
+
+/*yellow*/
+.yellow-full {
+    background: rgba(249, 198, 20, 0.5);
+    border: 1px solid #F9C614;
+}
+
+.yellow-middle {
+    background: rgba(249, 198, 20, 0.25);
+    border: 1px solid #F9C614;
+}
+
+.yellow-empty {
+    background: transparent;
+    border: 1px solid #F9C614;
+}
+
+/*green*/
+.green-full {
+    background: rgba(47, 208, 73, 0.35);
+    border: 1px solid #2FD049;
+}
+
+.green-middle {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid #2FD049;
+}
+
+.green-empty {
+    background: transparent;
+    border: 1px solid #2FD049;
+}
+
+/*blue*/
+.blue-full {
+    background: rgba(44, 10, 250, 0.7);
+    border: 1px solid #2C0AFA;
+}
+
+.blue-middle {
+    background: rgba(44, 10, 250, 0.45);
+    border: 1px solid #2C0AFA;
+}
+
+.blue-empty {
+    background: transparent;
+    border: 1px solid #2C0AFA;
+}
+
+/*gray*/
+.gray-full {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #B4C1D0;
+}
+
+.gray-middle {
+    background: rgba(87, 87, 87, 0.2);
+    border: 1px solid #B4C1D0;
+}
+
+.gray-empty {
+    background: transparent;
+    border: 1px solid #B4C1D0;
+}
