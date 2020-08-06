@@ -327,18 +327,18 @@
 
 /*blue*/
 .blue-full {
-    background: rgba(44, 10, 250, 0.7);
-    border: 1px solid #2C0AFA;
+    background: rgba(44, 10, 250, 0.67);
+    border: 1.5px solid #2C0AFA;
 }
 
 .blue-middle {
-    background: rgba(44, 10, 250, 0.45);
-    border: 1px solid #2C0AFA;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1.5px solid #2C0AFA;
 }
 
 .blue-empty {
     background: transparent;
-    border: 1px solid #2C0AFA;
+    border: 1.5px solid #2C0AFA;
 }
 
 /*gray*/
@@ -348,7 +348,7 @@
 }
 
 .gray-middle {
-    background: rgba(87, 87, 87, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     border: 1px solid #B4C1D0;
 }
 
