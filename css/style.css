@@ -2421,3 +2421,134 @@ button.btn3.active {
     color: #FFFFFF;
     margin-bottom: 10px;
 }
+
+/*New CSS from 30.08.2020*/
+
+.map-right-wrapper {
+    min-width: 56px;
+    width: 56;
+    height: 40px;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background: #FFF;
+    z-index: 500;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-right {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.scanex-baselayers {}
+
+.scanex-baselayers .scanex-legend-icon {
+    border-radius: 12px;
+    width: 56px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.scanex-baselayers .line td {
+    background-color: lightgray;
+    padding: 4px;
+    padding-bottom: 0px;
+}
+
+.baselayers-popup img {
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 1px;
+}
+
+.scanex-baselayers .baseLayer.active::after {
+    /* display: none; */
+    content: url(http://lv.scanex.ru:8080/api/common_components/dist/src/check.png);
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 18px;
+    height: 18px;
+    /* background: url(http://lv.scanex.ru:8080/api/common_components/dist/src/check.png); */
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.baselayers-popup {
+    background-color: white;
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50px;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    width: 290px;
+    height: 249px;
+    top: 0;
+    right: 63px;
+}
+
+.table-baselayers-popup label {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #453D3D;
+}
+
+.table-baselayers-popup .tr-td-spacer-10 {
+    height: 10px;
+    max-height: 10px;
+    display: block;
+    margin: -10px;
+}
+
+.table-baselayers-popup tbody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 180px;
+    height: 180px;
+    display: block;
+}
+
+.table-baselayers-popup tbody::-webkit-scrollbar {
+    display: none;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Лесовосток</title>
@@ -8,6 +9,7 @@
     <link href="css/icons.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
+
 <body>
     <div class="left-sidebar">
         <div class="left-sidebar_logo">
@@ -104,6 +106,61 @@
             <div class="map-top-right-wrapper__user">
                 <!-- <div class="person-menu person-menu-non-auth person-menu-auth"></div>Владимир Кантемировский -->
                 <div class="person-menu person-menu-non-auth"></div>Войти
+            </div>
+        </div>
+        <!-- Правый контрол подложек -->
+        <div class="map-right-wrapper">
+            <div class="map-right">
+                <div class="substrates"></div>
+                <div class="baselayers-popup">
+                    <table class="table-baselayers-popup">
+                        <thead>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Подложки</label>
+                                </td>
+                            </tr>
+                            <tr class="tr-td-spacer-10">
+                                <td class="tr-td-spacer-10">&nbsp;</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="line">
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_sputnik_ru.png" class="baseLayer active" data="sputnik">
+                                </td>
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_satellite.png" class="baseLayer" data="satellite">
+                                </td>
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_osm_hybrid.png" class="baseLayer active" data="OSMHybrid">
+                                </td>
+                            </tr>
+                            <tr class="line">
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_sputnik_ru.png" class="baseLayer active" data="sputnik">
+                                </td>
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_satellite.png" class="baseLayer" data="satellite">
+                                </td>
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_osm_hybrid.png" class="baseLayer active" data="OSMHybrid">
+                                </td>
+                            </tr>
+                            <tr class="line">
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_sputnik_ru.png" class="baseLayer active" data="sputnik">
+                                </td>
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_satellite.png" class="baseLayer" data="satellite">
+                                </td>
+                                <td>
+                                    <img src="https://maps.kosmosnimki.ru/api/img/baseLayers/basemap_osm_hybrid.png" class="baseLayer active" data="OSMHybrid">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <!-- папап  Нижний участок Авториз 1 -->
@@ -699,7 +756,7 @@
             </div>
         </div>
         <!-- попап матричных слоев -->
-        <div class="map-popup-layer-matrix">
+        <div class="map-popup-layer-matrix hidden">
             <div class="map-popup-layer-matrix-header">
                 <div class="matrix-header"></div>
                 Матрица слоёв
@@ -812,4 +869,5 @@ chart3.render();
 var chart4 = new ApexCharts(document.querySelector("#chart4"), options1);
 chart4.render();
 </script>
+
 </html>
