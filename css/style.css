@@ -1237,7 +1237,36 @@ button.disabled {
 }
 
 .black {
-    color: #000;
+    color: #000 !important;
+}
+
+.green {
+    color: #42B162 !important;
+}
+
+.blue {
+    color: #3090D6 !important;
+}
+
+.red {
+    color: #FF4F42 !important;
+    font-weight: 600 !important;
+}
+
+.black-bg {
+    background: #000 !important;
+}
+
+.green-bg {
+    background: #42B162 !important;
+}
+
+.blue-bg {
+    background: #3090D6 !important;
+}
+
+.red-bg {
+    background: #FF4F42 !important;
 }
 
 .wrapper-full-height {
@@ -1348,7 +1377,7 @@ button.disabled {
     height: 34px;
     width: 100%;
     margin-top: 23px;
-    margin-bottom: 34px;
+    margin-bottom: 17px;
     position: relative;
 }
 
@@ -2423,7 +2452,6 @@ button.btn3.active {
 }
 
 /*New CSS from 30.08.2020*/
-
 .map-right-wrapper {
     min-width: 56px;
     width: 56;
@@ -2452,7 +2480,6 @@ button.btn3.active {
     align-items: center;
     position: relative;
 }
-
 
 .scanex-baselayers {}
 
@@ -2551,4 +2578,274 @@ button.btn3.active {
 
 .table-baselayers-popup tbody::-webkit-scrollbar {
     display: none;
+}
+
+/*New CSS from 04/09/20 below*/
+.map-popup-part-svod {
+    margin-bottom: 320px;
+    min-height: 510px;
+    top: 67px;
+    padding: 7px 42px;
+    overflow-x: auto;
+    height: 90%;
+}
+
+.map-middle-wrapper-profile-row_price-wrapper-drop-100 {
+    width: 100%;
+    min-width: 337px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.custom__select-50 {
+    width: 50%;
+    margin-right: 42px;
+    max-width: inherit;
+    min-width: 337px;
+}
+
+.custom__select-50:last-child {
+    margin-right: 0;
+}
+
+.custom__header-50 {
+    width: 50%;
+    margin-right: 42px;
+    max-width: inherit;
+    padding: 0 0 0 0;
+    min-width: 337px;
+}
+
+.custom__header-50:last-child {
+    padding: 0 0 0 21px;
+}
+
+.custom__select-50 .select-selected {
+    max-width: inherit;
+}
+
+button.width-50 {
+    width: 50%;
+    min-width: 337px;
+}
+
+.spacer-gray {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.spacer-34 {
+    position: relative;
+    width: 100%;
+    height: 34px;
+    min-height: 34px;
+    display: block;
+}
+
+.spacer-27 {
+    position: relative;
+    width: 100%;
+    height: 27px;
+    min-height: 27px;
+    display: block;
+}
+
+.date-wrapper-100 {
+    width: 100%;
+    min-width: 337px;
+}
+
+.chart-row {
+    width: 100%;
+    height: 220px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-row__left {
+    width: 50%;
+    min-width: 337px;
+    margin-right: 42px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chart-row__left-el {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.chart-row__left-el-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.chart-row__left-el-chart__text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 28px;
+    color: #6B707B;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.chart-row__left-el-chart__arrow {
+    display: block;
+    height: 170px;
+    width: 100%;
+    background: gray;
+}
+
+.chart-row__left-el-chart__text_bot {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #6B707B;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    white-space: nowrap;
+    flex-direction: row;
+    text-align: -webkit-left;
+    overflow: visible;
+    width: inherit;
+    position: relative;
+    right: 10px;
+}
+
+.chart-row__right {
+    width: 50%;
+    min-width: 337px;
+    margin-right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.chart-row__right_line {
+    width: 130px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rec {
+    display: block;
+    border-radius: 9px;
+    width: 32px;
+    height: 32px;
+}
+
+.rec-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    color: #6B707B;
+    width: 80px;
+}
+
+.horizont-first {
+    width: 200px;
+    min-width: 200px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B707B;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.horizont-sec {
+    width: 318px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-right: 15px;
+    min-width: 167px;
+}
+
+.horizont-sec-act {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.horizont-third {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100px;
+    min-width: 100px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.horizont-4 {
+    width: 237px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6B707B;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 200px;
+}
+
+.horizont-third.gray {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B707B;
 }
