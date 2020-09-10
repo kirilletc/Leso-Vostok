@@ -2937,6 +2937,7 @@ span.inline-flex-row-end {
     height: 100%;
     top: 0;
     justify-content: space-between;
+    min-width: 367px;
 }
 
 .rubka::-webkit-scrollbar {
